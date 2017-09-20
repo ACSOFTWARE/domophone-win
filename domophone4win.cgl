@@ -1,0 +1,3 @@
+Error 00245. 0x310000 (Thread 0x133C):
+Bad parameter: A bad memory block (0x303588C) has been passed to the
+ function.

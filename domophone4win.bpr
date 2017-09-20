@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="domophone4win.exe"/>
+    <OBJFILES value="domophone4win.obj main.obj domophoneconnection.obj linphone.obj 
+      settings.obj language.obj about.obj ..\libdomophone\dconnection.obj 
+      ..\libdomophone\socketdata.obj"/>
+    <RESFILES value="domophone4win.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) main.dfm settings.dfm about.dfm"/>
+    <LIBFILES value="&quot;C:\Program Files (x86)\Borland\CBuilder6\Lib\wininet.lib&quot;"/>
+    <LIBRARIES value="MJFSecurityStd_50R_cb6.lib bcbie.lib dac60.lib sdac60.lib 
+      AcSPlatformaPKG.lib FS6.lib frx6.lib tmsexc6.lib bdertl.lib VclSmp.lib 
+      vcldb.lib dbrtl.lib vclx.lib tmsc6.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib tmsc6.lib vclx.lib dbrtl.lib vcldb.lib VclSmp.lib 
+      bdertl.lib tmsexc6.lib frx6.lib FS6.lib AcSPlatformaPKG.lib sdac60.lib 
+      dac60.lib bcbie.lib MJFSecurityStd_50R_cb6.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi 
+      visualclx.bpi visualdbclx.bpi dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi webdsnap.bpi bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi 
+      dbexpress.bpi dbxcds.bpi bcb2kaxserver.bpi MJFSecurityStd_50R_cb6.bpi 
+      dac60.bpi dacvcl60.bpi mydac60.bpi mydacvcl60.bpi mysqlmon60.bpi 
+      sdac60.bpi sdacvcl60.bpi TeeDB8C6.bpi Tee8C6.bpi TeeUI8C6.bpi TeeGL8C6.bpi 
+      TeeQR8C6.bpi TeePro8C6.bpi TeeWorld8C6.bpi TeeLanguage8C6.bpi 
+      TeeImage8C6.bpi IndyCore60.bpi IndySystem60.bpi IndyProtocols60.bpi 
+      tmsc6.bpi VclSmp.bpi tmsexc6.bpi tmsxlsc6.bpi"/>
+    <PATHCPP value=".;..\libdomophone"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="domophone4win.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files (x86)\FastReports\FastReport 4\LibBCB6&quot;;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;D:\devel\projekty\DomoPhone\win32;$(BCB)\include;$(BCB)\include\vcl;D:\devel\komponenty\TMS;..\liblinphone\include;..\liblinphone\include\linphone;..\libdomophone"/>
+    <LIBPATH value="..\libdomophone;..\..\..\komponenty\indy10\c6;&quot;C:\Program Files (x86)\FastReports\FastReport 4\LibBCB6&quot;;&quot;C:\Program Files (x86)\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib&quot;;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;D:\devel\projekty\DomoPhone\win32;&quot;..\..\..\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\devel\komponenty\TMS"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files (x86)\FastReports\FastReport 4\LibBCB6&quot; 
+      -I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; 
+      -ID:\devel\projekty\DomoPhone\win32 -I$(BCB)\include -I$(BCB)\include\vcl 
+      -ID:\devel\komponenty\TMS -I..\liblinphone\include 
+      -I..\liblinphone\include\linphone -I..\libdomophone -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="domophone4win.res" FORMNAME="" UNITNAME="domophone4win.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="domophone4win.cpp" FORMNAME="" UNITNAME="domophone4win" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="main.cpp" FORMNAME="fmain" UNITNAME="main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="domophoneconnection.cpp" FORMNAME="" UNITNAME="domophoneconnection" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="linphone.cpp" FORMNAME="" UNITNAME="linphone" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="settings.cpp" FORMNAME="fsettings" UNITNAME="settings" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files (x86)\Borland\CBuilder6\Lib\wininet.lib" FORMNAME="" UNITNAME="wininet.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="language.cpp" FORMNAME="" UNITNAME="language" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="about.cpp" FORMNAME="fabout" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\libdomophone\dconnection.c" FORMNAME="" UNITNAME="dconnection.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\libdomophone\socketdata.c" FORMNAME="" UNITNAME="socketdata.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=2
+Release=2
+Build=157
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=AC SOFTWARE SP. Z O.O.
+FileDescription=
+FileVersion=1.2.2.157
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=DomoPhone for Windows
+ProductVersion=1.2
+Comments=
+Sygnatura=ACSOFTWARE_DOMOPHONE_WIN32%L1%
+
+[Excluded Packages]
+c:\program files (x86)\borland\cbuilder6\Bin\dcldss60.bpl=Borland Decision Cube Components
+..\uaktualnienie.bpl=uaktualnienie
+
+[HistoryLists\hlIncludePath]
+Count=7
+Item0=C:\Program Files (x86)\FastReports\FastReport 4\LibBCB6;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;$(BCB)\include;$(BCB)\include\vcl;D:\devel\komponenty\TMS;..\liblinphone\include;..\liblinphone\include\linphone;..\libdomophone
+Item1=C:\Program Files (x86)\FastReports\FastReport 4\LibBCB6;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;$(BCB)\include;$(BCB)\include\vcl;D:\devel\komponenty\TMS;..\liblinphone\include;..\liblinphone\include\linphone
+Item2=C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;$(BCB)\include;$(BCB)\include\vcl;D:\devel\komponenty\TMS;..\liblinphone\include;..\liblinphone\include\linphone
+Item3=C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;$(BCB)\include;$(BCB)\include\vcl;D:\devel\komponenty\TMS;..\liblinphone\include
+Item4=C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;$(BCB)\include;$(BCB)\include\vcl;D:\devel\komponenty\TMS
+Item5=$(BCB)\include;$(BCB)\include\vcl;D:\devel\komponenty\TMS
+Item6=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=6
+Item0=..\libdomophone;..\..\..\komponenty\indy10\c6;C:\Program Files (x86)\FastReports\FastReport 4\LibBCB6;C:\Program Files (x86)\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;..\..\..\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\devel\komponenty\TMS
+Item1=..\..\..\komponenty\indy10\c6;C:\Program Files (x86)\FastReports\FastReport 4\LibBCB6;C:\Program Files (x86)\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;..\..\..\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\devel\komponenty\TMS
+Item2=..\..\..\komponenty\indy10\c6;C:\Program Files (x86)\FastReports\FastReport 4\LibBCB6;C:\Program Files (x86)\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;d:\devel\komponenty\indy10\c6;..\..\..\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\devel\komponenty\TMS
+Item3=C:\Program Files (x86)\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\devel\projekty\DomoPhone\win32;d:\devel\komponenty\indy10\c6;..\..\..\Steema Software\TeeChart 8.07 for Builder 6\Builder6\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\devel\komponenty\TMS
+Item4=$(BCB)\lib\obj;$(BCB)\lib;D:\devel\komponenty\TMS
+Item5=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
